@@ -50,16 +50,25 @@ var myPlayList = [
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  
+	for(var i = 0; i < myPlayList.length; i++) {
+	    var song1 = myPlayList[i].title;
+		var Artist = myPlayList[i].artist;
+		var mp3 = myPlayList[i]["mp3-url"];
+		var image = myPlayList[i]["image-url"];
 
-
-
+	    // $('.songs').append("<p>" +song1+Artist+mp3+image+ "</p>");
+	    $('.songs').append('<div>');
+	    $('.songs').append("<h1>" +song1+ "</h1>")
+	    $('.songs').append("<h2>" +Artist+ "</h2>")
+	    $('.songs').append("<a>" +mp3+ "</a>")
+	    $('.songs').append("<img>" +image+ "</img>")
+		$('.songs').append('</div>');
+	}
 });
 
 function displayList(){
 
-
-  
+	
 }
 
 function clearList(){
@@ -69,7 +78,6 @@ function clearList(){
 }
 
 function addSong(){
- 
-  
+
   
 }
