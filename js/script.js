@@ -60,8 +60,8 @@ $( document ).ready(function() {
 	    $('.songs').append('<div>');
 	    $('.songs').append("<h1>" +song1+ "</h1>")
 	    $('.songs').append("<h2>" +Artist+ "</h2>")
-	    $('.songs').append("<a>" +mp3+ "</a>")
-	    $('.songs').append("<img>" +image+ "</img>")
+	    $('.songs').append('<a href="' +mp3 +  '">' + "Visit Spotify.com!"+ "</a>")
+	    $('.songs').append("<img src=" +image + ">")
 		$('.songs').append('</div>');
 	}
 });
